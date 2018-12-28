@@ -18,6 +18,7 @@ def helper_func(arr, alphabet_hash, count)
     count += 1
     new_arr[0..new_arr_sim_length] = arr[0..new_arr_sim_length].sort_by do |word|
       alphabet_hash[word[count]]
+    end
   end
   if new_arr == arr
     return arr
