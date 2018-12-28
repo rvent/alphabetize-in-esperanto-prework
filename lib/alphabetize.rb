@@ -5,8 +5,11 @@ def alphabetize(arr)
   alphabet.each_char.with_index do |char, index|
     alphabet_hash[char] = index
   end
-  arr.sort_by do |first|
-    alphabet_hash[first.each_char {|char|}]
+
+  arr.sort_by do |word|
+    word.each_char do |char|
+      alphabet_hash[char]
+    end
   end
   # arr
 end
