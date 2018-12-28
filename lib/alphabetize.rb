@@ -1,4 +1,5 @@
 def alphabetize(arr)
   # code here
-  arr.sort_by {|word| word[0]}
+  ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  arr.sort_by {|word| word.downcase}
 end
