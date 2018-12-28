@@ -8,6 +8,6 @@ def alphabetize(arr)
   # arr
 
   new_arr = arr.sort_by do |word|
-    word.each_chars {|char| alphabet_hash[char]}
+    word.each_char {|char| alphabet_hash[char]}
   end
 end
