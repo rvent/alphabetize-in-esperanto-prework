@@ -5,11 +5,13 @@ def alphabetize(arr)
   alphabet.each_char.with_index do |char, index|
     alphabet_hash[char] = index
   end
-
-  arr.sort_by do |word|
-    word.each_char do |char|
-      alphabet_hash[char]
+  short_list = arr.sort_by {|word| word.length}
+  count = 0
+  while count < short_list.length
+    arr.sort_by do |word|
+      alphabet_hash[word[count]]
     end
+    count += 1
   end
   # arr
 end
