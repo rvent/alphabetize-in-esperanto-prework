@@ -30,4 +30,4 @@ end
 q = ["hi"]
 w = ["hi", "hello"]
 has = {"h" => 3, "i" => 2, "e" => 1}
-puts helper_func(q, has, 0)
+puts helper_func(w, has, 0)
