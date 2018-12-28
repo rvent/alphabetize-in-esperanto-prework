@@ -6,9 +6,7 @@ def alphabetize(arr)
     alphabet_hash[char] = index
   end
   arr.sort_by do |first|
-    first.sort_by do |char|
-      alphabet_hash[char]
-    end
+    alphabet_hash[first.each_char {|char|}]
   end
   # arr
 end
