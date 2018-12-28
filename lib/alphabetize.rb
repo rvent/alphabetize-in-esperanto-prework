@@ -30,7 +30,7 @@ def helper_func(arr, alphabet_hash, count)
   end
 end
 
-q = ["hi"]
-w = ["hi", "hello"]
-has = {"h" => 3, "i" => 2, "e" => 1}
-puts helper_func(w, has, 0)
+# q = ["hi"]
+# w = ["hi", "hello"]
+# has = {"h" => 3, "i" => 2, "e" => 1}
+# puts helper_func(w, has, 0)
