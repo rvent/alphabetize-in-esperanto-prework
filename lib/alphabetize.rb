@@ -7,7 +7,7 @@ def alphabetize(arr)
   end
   # arr
   new_arr = arr.sort_by do |word|
-    alphabet_hash[word[0..-1]
+    alphabet_hash[word[0..-1]]
   end
 end
 
