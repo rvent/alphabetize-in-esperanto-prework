@@ -15,5 +15,6 @@ def alphabetize(arr)
         break
       end
     end
+  end
   # arr
 end
