@@ -11,4 +11,3 @@ def alphabetize(arr)
     word.each_chars {|char| alphabet_hash[char]}
   end
 end
-
