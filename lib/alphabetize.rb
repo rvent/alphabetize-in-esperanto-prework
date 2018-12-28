@@ -13,7 +13,7 @@ def helper_func(arr, alphabet_hash, count)
   new_arr = arr.sort_by do |word|
     alphabet_hash[word[count]]
   end
-  new_arr_sim = new_arr.select {|word| word.start_with?word[0]}
+  new_arr_sim = new_arr.select {|word| word.start_with?(word[0])}
   p new_arr, new_arr_sim
   new_arr_sim_length = new_arr_sim.length
   p new_arr_sim_length
