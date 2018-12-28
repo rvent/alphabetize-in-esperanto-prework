@@ -6,7 +6,7 @@ def alphabetize(arr)
     alphabet_hash[char] = index
   end
   # arr
-  
+
   new_arr = arr.sort_by do |word|
     word.chars.map {|char| alphabet_hash[char]}
   end
