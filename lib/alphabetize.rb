@@ -16,7 +16,6 @@ def helper_func(arr, alphabet_hash, count)
   new_arr_sim = new_arr.select {|word| word.start_with?word[0]}
   new_arr_sim_length = new_arr_sim.length
   if new_arr_sim_length > 1
-    count += 1
     new_arr[0...new_arr_sim_length] = arr[0...new_arr_sim_length].sort_by do |word|
       alphabet_hash[word[count]]
     end
@@ -27,3 +26,8 @@ def helper_func(arr, alphabet_hash, count)
     return helper_func(new_arr, alphabet_hash, count)
   end
 end
+
+q = ["hi"]
+w = ["hi", "hello"]
+has = {"h" => 3, "i" => 2, "e" => 1}
+puts helper_func(q, has, 0)
