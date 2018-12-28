@@ -14,5 +14,6 @@ def alphabetize(arr)
         alphabet_hash[first[count]] <=> alphabet_hash[next[count]]
         break
       end
+    end
   # arr
 end
