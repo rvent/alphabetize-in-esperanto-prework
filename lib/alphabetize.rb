@@ -7,7 +7,8 @@ def alphabetize(arr)
   end
   arr.sort_by do |first|
     first.sort_by do |char|
-      alphabet_hash[char|
+      alphabet_hash[char]
+    end
   end
   # arr
 end
