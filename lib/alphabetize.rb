@@ -7,7 +7,7 @@ def alphabetize(arr)
   end
   short_list = arr.sort_by {|word| word.length}
   count = 0
-  while count < short_list.length
+  while count < short_list[0].length
     arr.sort_by do |word|
       alphabet_hash[word[count]]
     end
